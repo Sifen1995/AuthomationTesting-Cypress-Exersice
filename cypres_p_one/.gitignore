@@ -1,0 +1,22 @@
+# Dependencies
+/node_modules
+
+# Build artifacts and compiled code
+/dist
+/build
+/out
+/package-lock.json
+
+# Cypress specific files
+# Exclude videos and screenshots created during test runs.
+# These can take up a lot of space and are recreated on each run.
+/cypress/videos
+/cypress/screenshots
+
+# Configuration and temporary files
+.env
+.DS_Store
+npm-debug.log*
+yarn-error.log
+test-results.xml
+mochawesome-report/
