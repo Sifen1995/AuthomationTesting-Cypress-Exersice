@@ -15,16 +15,3 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-
-// cypress/support/e2e.js
-
-Cypress.on('uncaught:exception', (err, runnable) => {
-    // We check if the error message is related to ad/tracking frameworks 
-    // or known third-party security errors.
-    if (err.message.includes('setup is not a function') || err.name === 'SecurityError') {
-        // Return false to prevent Cypress from failing the test
-        return false
-    }
-    // Let other errors fail the test
-    return true
-});
