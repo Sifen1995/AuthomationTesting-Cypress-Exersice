@@ -39,7 +39,7 @@ describe('Login Form Validation Test', () => {
        // Change line 41 in your test
 cy.get(selectors.errorMessage)
   .should('be.visible')
-  .and('have.text', 'Your username is invalid!'); // <-- FIX: Updated text
+  .and('have.text', 'Your username is invalid!'); 
 
         // --- POSITIVE TEST: Valid Credentials ---
         cy.log('Attempting login with VALID credentials...');
